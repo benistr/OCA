@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 header {
     width: 18%;
     position: fixed;
@@ -6,7 +10,7 @@ header {
 }
 
 .main-logo {
-    width: 20%;
+    width: 10%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -31,22 +35,24 @@ main {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: 0 20%;
+    padding-left: 8%;
+    padding-right: 8%;
 }
 
 .main-justice {
-    margin-top: 5%;
+    margin-top: 4%;
     background-image: url(../assets/justice.jpg);
     background-size: cover;
     width: 100%;
     height: 400px;
     background-repeat: no-repeat;
+    border-radius: 15px;
 }
 
 .main-name {
-    font-family: 'Roboto Mono', monospace;
     text-align: center;
-    padding-top: 5%;
-    font-size: 3.2rem;
+    padding-top: 3%;
+    font-size: 2rem;
     padding-left: 5%;
     padding-right: 5%;
     color: #333333;
@@ -55,7 +61,7 @@ main {
 .main-tag {
     text-align: center;
     padding-top: 16px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .article-part {
@@ -87,7 +93,6 @@ main {
 
 .article-marteau {
     background-image: url(../assets/marteau.jpg);
-    -webkit-filter: grayscale(50%);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 100% 80%;
@@ -102,6 +107,7 @@ main {
     border: 2px solid #333333;
     border-radius: 15px;
     width: 30%; /* la largeur est donc de 30% la largeur max disponible */
+    height: 200px;
     text-align: center;
     margin-bottom: 16px;
     padding: 16px 16px 8px 16px;
@@ -110,10 +116,9 @@ main {
 }
   
 .picture img {
-    max-width: 100%;
+    max-width: 200px;
     max-height: 120px;
     border-radius: 15px;
-    -webkit-filter: grayscale(80%);
 }
   
 .picture-container {
@@ -155,7 +160,6 @@ h2 {
 
 .aside-rightpart {
     background-image: url(../assets/bureau.jpg);
-    -webkit-filter: grayscale(70%);
     background-size: cover;
     background-repeat: no-repeat;
     float: right;
@@ -212,4 +216,176 @@ input[type="submit"]{
 ::placeholder {
     font-family: 'Quicksand', sans-serif;
     color: #333333;
+}
+
+.location-part {
+    display: flex;
+    width: 90%;
+    padding-top: 16px;
+    margin: auto;
+}
+
+.location-h1 {
+    padding-top: 5%;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.location-leftpart {
+    width: 50%;
+}
+
+.location-rightpart {
+    width: 50%;
+}
+
+.contact-tel {
+    display: block;
+    text-align: center;
+}
+
+.contact-fax {
+    display: block;
+    text-align: center;
+}
+
+.location-aside {
+    background-image: url(../assets/batiment.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    float: right;
+    width: 100%;
+    height: 400px;
+    margin: 5% 5% 5% 5%;
+    border-radius: 15px;
+}
+
+iframe {
+    border-radius: 15px;
+    margin: 5% 5% 5% 5%;
+    width: 100%;
+}
+
+.doctrine {
+    filter: grayscale(100%);
+    height: 60px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+    border-radius: 15px;
+}
+
+.bottom .doctrine-pres {
+    width: 70%;
+    font-size: 0.8rem;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sidebar .bottom {
+    text-align: center;
+    position: absolute;
+    bottom: 5%;
+    font-size: 0.8rem;
+}
+
+.sidebar .side-logo {
+    width: 30%;
+    border-radius: 120px;
+    border: 2px solid white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+}
+
+
+
+/* SLIDING MENU */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.page-wrapper {
+    transition: 250ms;
+}
+
+.sidebar {
+    width: 200px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    padding-top: 66px;
+    background-color: #333333;
+    color: #ebebeb;
+    transition: 250ms;
+}
+
+.sidebar .link {
+    padding: 8px 25px;
+    cursor: pointer;
+    transition: 250ms;
+    font-weight: 300;
+    text-align: center;
+}
+
+.sidebar .link:hover {
+    color: #bbbbbb;
+}
+
+.sidebar.menu-1 {
+    left: -200px;
+    padding-top: 10%;
+}
+
+.menu-toggle {
+    z-index: 100;
+    position: fixed;
+    top: 25px;
+    padding: 5px 10px;
+    border: 1px solid #333333;
+    color: #333333;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 250ms;
+}
+
+.menu-toggle.menu-1-toggle {
+    left: 25px;
+}
+
+.menu-toggle .menu-label {
+    display: block;
+}
+
+.menu-toggle .close-label {
+    display: none;
+}
+
+#menu1Toggle {
+    display: none;
+}
+
+#menu1Toggle:checked ~ .page-wrapper .sidebar.menu-1 {
+    left: 0;
+    box-shadow: 0 0 15px #333;
+}
+
+#menu1Toggle:checked ~ .page-wrapper .menu-toggle.menu-1-toggle {
+    border-color: #ebebeb;
+    color: #ebebeb;
+    left: 62px;
+}
+
+#menu1Toggle:checked ~ .page-wrapper .menu-toggle.menu-1-toggle .menu-label {
+    display: none;
+}
+
+#menu1Toggle:checked ~ .page-wrapper .menu-toggle.menu-1-toggle .close-label {
+    display: block;
 }

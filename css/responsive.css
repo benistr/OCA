@@ -1,0 +1,13 @@
+@media (max-width: 900px)
+{
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    overflow-x: hidden;
+}
+
+}
