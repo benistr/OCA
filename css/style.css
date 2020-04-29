@@ -34,7 +34,7 @@ main {
     background-size: 100% 100vh;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: 0 20%;
+    background-position: 0 40%;
     padding-left: 8%;
     padding-right: 8%;
 }
@@ -43,8 +43,10 @@ main {
     margin-top: 4%;
     background-image: url(../assets/justice.jpg);
     background-size: cover;
-    width: 100%;
+    width: 90%;
     height: 400px;
+    margin-left: auto;
+    margin-right: auto;
     background-repeat: no-repeat;
     border-radius: 15px;
 }
@@ -104,7 +106,6 @@ main {
 }
 
 .picture {
-    border: 2px solid #333333;
     border-radius: 15px;
     width: 30%; /* la largeur est donc de 30% la largeur max disponible */
     height: 200px;
@@ -379,7 +380,7 @@ iframe {
 #menu1Toggle:checked ~ .page-wrapper .menu-toggle.menu-1-toggle {
     border-color: #ebebeb;
     color: #ebebeb;
-    left: 62px;
+    left: calc(100px - 37px);
 }
 
 #menu1Toggle:checked ~ .page-wrapper .menu-toggle.menu-1-toggle .menu-label {

@@ -7,12 +7,14 @@
     <title>Ollivier Carles de Caudemberg</title>
     <meta name="description" content="Ollivier Carles de Caubemberg : Avocat au barreau de Nice. Vous trouverez ici toutes les informations relatives à mon activité avant de me contacter">
 
+    <link rel="icon" href="../assets/favicon-32x32.png">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/responsive.css">
 
     <link href="https://fonts.googleapis.com/css?family=Euphoria+Script|Quicksand:400,500,700|Gotu|Roboto+Mono&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <input id="menu1Toggle" ,="," type="checkbox"/>
@@ -20,17 +22,18 @@
             <div class="page-content"></div>
                 <label class="menu-toggle menu-1-toggle" alt="Menu" for="menu1Toggle"><span class="menu-label">Menu </span><span class="close-label">Fermer</span></label>
                 <div class="sidebar menu-1">
-                    <a href="index.php"><img class="side-logo" src="../assets/logo2.png" alt=""></a>
-                    <div class="link"><a href="#presentation"> Présentation</a></div>
-                    <div class="link"><a href="#domainesexpertise">Domaines d'expertise</a></div>
-                    <div class="link"><a href="#contact">Contact</a></div>
-                    <div class="link"><a href="#localisation">Localisation</a></div>
+                    <a href="./index.php"><img class="side-logo" src="../assets/logo2.png" alt=""></a>
+                    <div class="link"><a href="./#presentation"> Présentation</a></div>
+                    <div class="link"><a href="./#domainesexpertise">Domaines d'expertise</a></div>
+                    <div class="link"><a href="./#contact">Contact</a></div>
+                    <div class="link"><a href="./#localisation">Localisation</a></div>
+                    <!--div class="link"><a href="./actualite.php">Actualités</a></div-->
 
                     <div class="bottom">
                     <p class="doctrine-pres">Retrouvez nos dernières décisions sur</p>
                     <a href="https://www.doctrine.fr/p/avocat/LBD17B3CA201EE31736A5" target="_blank"><img class="doctrine" src="../assets/doctrine.png" alt="Avocat-Ollivier-Carles-De-Caudemberg-Nice-Dernières-Décisions"></a>
 
-                        <p class="credits">&copy; Site internet créé par <a class="link" href="https://www.linkedin.com/in/benjaminstraub-web/" alt="linkedin-Benjamin-Straub">Benjamin Straub</a><br>
+                        <p class="credits"><?= date('Y') ?> &copy; Site internet créé par <a class="link" href="https://www.linkedin.com/in/benjaminstraub-web/" alt="linkedin-Benjamin-Straub">Benjamin Straub</a><br>
                         Tous droits réservés</p><br>
                         <a class="link" href="mentionslegales.php" alt="mentions-légales">Mention légales</a>
                     </div>
@@ -39,7 +42,7 @@
     </header>
     <main>
         <div>
-            <a href="index.php"><img class="main-logo" src="../assets/logo.jpg" alt=""></a>
+            <a href="./index.php"><img class="main-logo" src="../assets/logo.jpg" alt=""></a>
             <p class="main-name">Cabinet de Maître Ollivier Carles de Caudemberg</p>
             <p class="main-tag">Avocat au barreau de Nice</p>
             <div class="main-justice">
@@ -63,7 +66,7 @@
                 <br><br>
                 Pour chaque dossier, un devis vous sera établi, et par la suite, une convention d'honoraires conformément à la Loi.
                 <br><br>
-                Le Cabinet travaille essentiellement par <a class="link" href="#contact">mail</a>, donc n'hésitez pas à nous adresser un mail avec votre demande. Il y sera répondu très rapidement. Pour une prise de rendez-vous, vous pouvez directement contacter par <a class="link" href="#localisation">téléphone</a> le Cabinet.
+                Le Cabinet travaille essentiellement par <a class="link" href="#contact">mail</a>, donc n'hésitez pas à nous adresser un <a class="link" href="#contact">mail</a> avec votre demande. Il y sera répondu très rapidement. Pour une prise de rendez-vous, vous pouvez directement contacter par <a class="link" href="#localisation">téléphone</a> le Cabinet.
                 </p>
             </div>
             <div class="article-rightpart">

@@ -6,8 +6,318 @@ html {
 }
 
 body {
-    font-family: 'Quicksand', sans-serif;
     overflow-x: hidden;
+    font-family: 'Quicksand', sans-serif;
+    color: #333333;
+    width: 100%;
+}
+
+header {
+    background-color: #333333;
+    height: 40px;
+    width: 100%;
+}
+
+main {
+    padding-top: 50px;
+    padding-left: 2%;
+    padding-right: 2%;
+    background-image: url(../assets/fond.jpg);
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 0 40%;
+}
+
+.main-justice {
+    margin-top: 4%;
+    background-image: url(../assets/justice.jpg);
+    background-size: cover;
+    background-position: 50% 0;
+    width: 90%;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+}
+
+.main-logo {
+    padding-top: 0;
+    width: 15%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-name {
+    text-align: center;
+    padding-top: 3%;
+    font-size: 1.5rem;
+    padding-left: 5%;
+    padding-right: 5%;
+    color: #333333;
+}
+
+.main-tag {
+    text-align: center;
+    padding-top: 16px;
+    font-size: 1rem;
+}
+
+.article-part {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 32px;
+}
+
+.article-h1 {
+    padding-top: 2%;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.article-presentation {
+    text-align: justify;
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-right: 5%;
+}
+
+.article-leftpart {
+    width: 100%;
+}
+
+.article-rightpart {
+    width: 100%;
+}
+
+.article-marteau {
+    background-image: url(../assets/marteau.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% 80%;
+    float: right;
+    width: 90%;
+    height: 200px;
+    margin: 5% 5% 5% 5%;
+    border-radius: 15px;
+}
+
+.picture {
+    border-radius: 15px;
+    width: 100%; /* la largeur est donc de 30% la largeur max disponible */
+    height: 200px;
+    text-align: center;
+    margin-bottom: 16px;
+    padding: 16px 16px 8px 16px;
+    background-color: #d0d0d0;
+    /*float: left;*/
+}
+  
+.picture img {
+    max-width: 200px;
+    max-height: 120px;
+    border-radius: 15px;
+}
+  
+.picture-container {
+    margin: 32px 32px 16px 32px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+h2 {
+    padding: 16px 0 16px 0;
+}
+
+.contact-part {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 16px;
+}
+
+.contact-leftpart {
+    width: 100%;
+}
+
+.contact-rightpart {
+    width: 100%;
+}
+
+.contact-h1 {
+    padding-top: 0;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.contact-form {
+    padding-top: 5%;
+    margin: 0 5% 0 5%;
+}
+
+.aside-rightpart {
+    background-image: url(../assets/bureau.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    width: 90%;
+    height: 400px;
+    margin: 5% 5% 5% 5%;
+    border-radius: 15px;
+}
+
+.contact-area {
+    float: right;
+    margin-right: 5%;
+    border-radius: 15px;
+    border: 2px solid #333333;
+    width: 65%;
+    padding: 5px 0 5px 0;
+    background-color: #d0d0d0;
+    font-family: 'Quicksand', sans-serif;
+    color: #333333;
+    padding-left: 5px;
+}
+
+.contact-area-text {
+    float: right;
+    margin-right: 5%;
+    border-radius: 15px;
+    border: 2px solid #333333;
+    width: 65%;
+    padding: 5px 0 5px 0;
+    background-color: #d0d0d0;
+    height: 180px;
+    font-family: 'Quicksand', sans-serif;
+    color: #333333;
+    padding-left: 5px;
+}
+
+input[type="submit"]{
+    cursor:pointer;
+}
+
+.submit-button {
+    float: right;
+    margin-right: 5%;
+    width: 65%;
+    border-radius: 15px;
+    background-color: #d0d0d0;
+    border: 2px solid #333333;
+    margin-top: 16px;
+    padding: 5px 0 5px 0;
+    font-family: 'Quicksand', sans-serif;
+    color: #333333;
+}
+
+::placeholder {
+    font-family: 'Quicksand', sans-serif;
+    color: #333333;
+}
+
+.location-part {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    padding-top: 16px;
+    margin: auto;
+}
+
+.location-h1 {
+    padding-top: 0;
+    text-align: center;
+    font-size: 1.22rem;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.location-leftpart {
+    width: 100%;
+}
+
+.location-rightpart {
+    width: 100%;
+}
+
+.contact-tel {
+    display: block;
+    text-align: center;
+}
+
+.contact-fax {
+    display: block;
+    text-align: center;
+}
+
+.location-aside {
+    background-image: url(../assets/batiment.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 90%;
+    height: 200px;
+    margin: 5% 5% 5% 5%;
+    border-radius: 15px;
+}
+
+iframe {
+    border-radius: 15px;
+    margin: 5% 5% 5% 5%;
+    width: 90%;
+}
+
+.doctrine {
+    filter: grayscale(100%);
+    height: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+    border-radius: 15px;
+}
+
+.bottom .doctrine-pres {
+    width: 70%;
+    font-size: 0.8rem;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sidebar .bottom {
+    text-align: center;
+    position: absolute;
+    bottom: 5%;
+    font-size: 0.8rem;
+}
+
+.sidebar .side-logo {
+    display: none;
+}
+
+.menu-toggle {
+    border-color: #ebebeb;
+    color: #ebebeb;
+    top: 5px;
+}
+
+.menu-toggle.menu-1-toggle {
+    left: calc(50% - 32px);
+}
+
+.sidebar.menu-1 {
+    left: -200px;
+    padding-top: 60px;
+}
+
+#menu1Toggle:checked ~ .page-wrapper .menu-toggle.menu-1-toggle {
+    border-color: #ebebeb;
+    color: #ebebeb;
+    left: calc(50% - 37px);
 }
 
 }
